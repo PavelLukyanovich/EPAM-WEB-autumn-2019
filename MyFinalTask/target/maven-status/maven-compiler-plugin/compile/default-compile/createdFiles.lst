@@ -1,0 +1,12 @@
+app\web\TaskController.class
+app\model\User.class
+app\web\UserController.class
+app\model\LoginBean.class
+app\web\UploadFile.class
+app\web\LoginController.class
+app\model\Tasks.class
+app\dao\TasksDaoUser.class
+app\dao\TasksDao.class
+app\dao\UserDao.class
+app\utils\JDBCUtils.class
+app\dao\LoginDao.class

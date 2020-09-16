@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mycandy>
+    <ingredients>SUGAR</ingredients>
+    <name>Snikers</name>
+    <energy>300</energy>
+    <production>P&amp;G</production>
+    <filling>true</filling>
+    <type>Choco</type>
+    <country>USA</country>
+    <protein>50</protein>
+    <fat>200</fat>
+    <carbohydrates>100</carbohydrates>
+</mycandy>

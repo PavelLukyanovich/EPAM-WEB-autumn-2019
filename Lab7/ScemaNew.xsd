@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="ingredientsType">
+       <xs:restriction base="xs:string">
+          <xs:enumeration value="SUGAR" />
+          <xs:enumeration value="MILC" />
+          <xs:enumeration value="VANIL" />
+          <xs:enumeration value="WATER" />
+       </xs:restriction>
+    </xs:simpleType>
+
+  <xs:complexType  name="candy" abstract="true">
+   <xs:sequence>
+      <xs:element name="ingredients" type="ingredientsType"/>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="energy" type="xs:int"/>
+      <xs:element name="production" type="xs:string"/>
+      <xs:element name="filling" type="xs:boolean"/>
+   </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="mycandy">
+   <xs:complexContent>
+     <xs:extension base="candy">
+       <xs:sequence>
+         <xs:element name="type" type="xs:string"/>
+         <xs:element name="country" type="xs:string"/>
+         <xs:element name="protein" type="xs:int"/>
+         <xs:element name="fat" type="xs:int"/>
+         <xs:element name="carbohydrates" type="xs:int"/>
+       </xs:sequence>
+     </xs:extension>
+   </xs:complexContent>
+  </xs:complexType>
+
+
+</xs:schema>
